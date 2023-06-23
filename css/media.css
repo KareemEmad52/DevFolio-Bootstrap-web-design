@@ -1,0 +1,127 @@
+ /* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media screen and (max-width: 1400px) { 
+
+}
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1200px) { 
+   
+    .carousel-item{
+        width: 100% !important;
+    }
+    .silde-caption > p{
+        padding: 0px 0rem;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) { 
+    
+    .navbar-nav > li::after{
+        display: none;
+    }
+    .navbar-nav > li > a{
+        transition: all 0.4s;
+    }
+    .navbar-nav > li > a:hover{
+        color: #0078ff !important;
+    }
+    .drop{
+        display: none;
+        left: 8.5px;
+        top: calc(100% + 25px);
+        margin: 0;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        background: #ffffff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: all 0.5s;
+        border-radius: 0%;
+    }
+    .drop2{
+        display: none;
+        left: calc(100% - 3px);
+        top: calc(100% + 0px);
+        margin: 0;
+        padding: 10px 10px;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        background: #ffffff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: all 0.5s;
+        border-radius: 0%;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+        position: absolute;
+    }
+    body:not(body:has(:target)) .navbar-nav > li a[href="#home"]::after{
+        display: none;
+    }
+    body:has(.home:target) .navbar-nav > li a[href="#home"]::after{
+        display: none;
+    }
+    body:has(.about:target) .navbar-nav > li a[href="#about"]::after{
+        display: none;
+    }
+    body:has(.services:target) .navbar-nav > li a[href="#services"]::after{
+        display: none;
+    }
+    body:has(.work:target) .navbar-nav > li a[href="#work"]::after{
+        display: none;
+    }
+    body:has(.blog:target) .navbar-nav > li a[href="#blog"]::after{
+        display: none;
+    }
+    body:has(.contant:target) .navbar-nav > li a[href="#contant"]::after{
+        display: none;
+    }
+    .head-title h1{
+        padding: 25px 25px !important;
+        font-size: 55px !important;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) { 
+
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) {  
+    .head-form{
+        margin-left: 16px;
+    }
+    .icons-layers{
+        padding: 48px 8px !important;
+    }
+    .head-title h1{
+        padding: 25px 25px !important;
+        font-size: 55px !important;
+    }
+    .head-title h3{
+        font-size: 22px !important;
+    }
+    .slider-inner-layer{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+
+
+
+
+
+
